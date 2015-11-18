@@ -1,0 +1,38 @@
+## メインコンテンツ
+
+- vim-gita の紹介
+  - Gita diff-ls の機能紹介
+    - 使用用途の説明
+    - `:Gita diff-ls` で開く
+    - `?m` や `?s` でヘルプが見れる
+    - `ee` や `dd` で開いたり diff を見たりできる
+  - Gita status の機能紹介
+    - `Gita status` で開く
+    - `?m` や `?s` でヘルプが見れる
+    - `ee` や `dd` で開いたり diff を見たりできる
+    - `--` や `-a` でステージングできる
+    - `cc`, `cA`, `cC` で Gita commit が開く
+  - Gita commit の機能紹介
+    - `?m` や `?s` でヘルプが見れる
+    - `ee` や `dd` で開いたり diff を見たりできる
+    - コミットメッセージは `:w` で保存できる
+    - `CC` するか `:wq` でコミットできる
+  - Gita diff の機能紹介
+    - `:Gita diff` とすることで diff が見れる
+    - `:Gita diff HEAD~4` とすることで特定のコミットと比較できる
+    - `:Gita diff` の機能は少し変える予定（全体の diff が見れないので）
+  - Gita file の機能紹介
+    - `:Gita file` とすることで開く
+    - `:Gita file HEAD~4` とすることで特定のコミットのバージョンが見れる
+  - Gita browse の機能紹介
+    - `:Gita browse` とすることでブラウザ開く
+    - `:Gita browse` は範囲選択も可能
+    - `:Gita browse --scheme=exact` などスキームを指定可能
+    - GHE や Gitlab なども追加でルールを記載することで対応できる
+  - Gita blame の機能紹介
+    - `:Gita blame` で開く
+    - Enter で巡る
+
+- vim-gita の内部
+  - git レポジトリ判定の詳細
+  - API の設計思想

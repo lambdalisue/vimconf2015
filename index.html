@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ぼくのかんがえたさいきょうのぷらぐいん</title>
+<link rel="stylesheet" href="css/slide.css">
+<textarea id="source"></textarea>
+<script src="js/remark.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+var slideshow;
+$(function() {
+  $.when(
+    $.get('slides/00-title.md'),
+    $.get('slides/00-profile.md'),
+    $.get('slides/01-vim_fugitive.md'),
+    $.get('slides/01-gita_diff-ls.md'),
+    $.get('slides/01-gita_status.md'),
+    $.get('slides/01-gita_commit.md'),
+    //$.get('slides/01-gita_diff.md'),
+    //$.get('slides/01-gita_file.md'),
+    $.get('slides/01-gita_browse.md'),
+    $.get('slides/01-gita_blame.md'),
+    $.get('slides/99-fin.md')
+  ).done(function() {
+    var args = Array.prototype.slice.call(arguments);
+    var contents = args.reduce(function(previousValue, currentValue) {
+      return previousValue + currentValue[0] + "\n---\n";
+    }, '');
+    $('#source').html(contents);
+    slideshow = remark.create();
+  });
+});
+</script>
