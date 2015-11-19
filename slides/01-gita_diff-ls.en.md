@@ -63,7 +63,7 @@ layout: true
 layout: true
 class: center, middle
 ---
-<video controls src="img/gita_diff-ls.webm"></video>
+<video controls src="img/gita_diff-ls_50k.webm"></video>
 ---
 # Very **useful**
 

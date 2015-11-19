@@ -27,7 +27,7 @@ class: center, middle
 layout: true
 class: center, middle
 ---
-<video controls src="img/gita_commit.webm"></video>
+<video controls src="img/gita_commit_50k.webm"></video>
 ---
 # Very **benri**
 

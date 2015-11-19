@@ -110,7 +110,7 @@ layout: true
 layout: true
 class: center, middle
 ---
-<video controls src="img/gita_blame.webm"></video>
+<video controls src="img/gita_blame_50k.webm"></video>
 ---
 # Ultra .highlight[benri] !!!
 

@@ -76,7 +76,7 @@ layout: true
 class: center, middle
 ---
 
-<video controls src="img/gita_browse.webm"></video>
+<video controls src="img/gita_browse_50k.webm"></video>
 ---
 
 # Very **benri**

@@ -119,7 +119,7 @@ layout: true
 layout: true
 class: center, middle
 ---
-<video controls src="img/gita_status.webm"></video>
+<video controls src="img/gita_status_50k.webm"></video>
 ---
 # Very **benri**
 
