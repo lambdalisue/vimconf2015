@@ -12,7 +12,13 @@ class: center, middle, invert
 
 --
 
-"Which one should I stage? Check it with `gita status`..."
+"Which files should I stage? Let me see..."
+
+--
+
+```
+$ git status
+```
 
 --
 
@@ -30,75 +36,91 @@ Changes not staged for commit:
 ```
 --
 
-.center.middle.highlight.huge[So many! So long！]
+.center.middle.huge[**So many! So long!**]
 
 ---
 layout: true
 class: center, middle
 ---
-When you edit a lot of files and need to call `git add` .highlight[individually]
+When you edit a lot of files and need to call `git add` **individually**
 ## Can you be bothered to do that?
-Or you may call `git add .` to mix everything into a single commit :-p
+Or you may call `git add .` to mix everything into a single commit
 ---
 # Then
 ---
-# .highlight[Gita status]
+# **Gita status**
 ---
 layout: true
 ---
 # Gita status ?
 
 - An alternative of `Gstatus` in fugitive<br>
-  .subtle[It shows statuses in *Short format* while fugitive shows in *Normal format*. *Short format* is a friend for user who used to git]
-- The following actions are available in the staging buffer.
+  *It shows statuses in Short format while fugitive shows in Normal format. Short format is a friend for user who used to git*
+
+- The following actions are available in the staging buffer
   - `--` - Toggle status (staged / unstaged)
   - `-a`, `-r` - git add or git reset
   - `ee`, `dd` - Edit, diff the file
   - `ss` - Open a special diff buffer to solve conflicts
   - `cc`, `cA`, `cC` - Open gita:commit buffer
+
 ---
 # Unfavorable points of Gstatus
-.absolute[.center.w100[![fugitive Gstatus](img/fugitive_Gstatus.png)]]
+.center[![fugitive Gstatus](img/fugitive_Gstatus.png)]
+
 ---
 # Unfavorable points of Gstatus
-.absolute.transparent[.center.w100[![fugitive Gstatus](img/fugitive_Gstatus.png)]]
+.left-column[.center[![fugitive Gstatus](img/fugitive_Gstatus.png)]]
+.right-column[
 - The output of `git status` is a bit redundant <br>
-  .subtle[It is good for beginners but beginners never being a beginner]
+  *It is good for beginners but not for professionals*
+]
 
 --
 
+.right-column[
 - The order of files will be changed after you stage / unstage a file<br>
-  .subtle[You may lost which file you just staged.]
+*You may lost which file you just staged*
+]
 
 --
 
-- It is not possible to specify options of `git status`. You may feel it is a really unfavorable behavior when you have a repository which has abundant submodules<br>
-  .subtle[I quickly checked help and couldn't find it. I'm sorry if there is a way]
+.right-column[
+- No options? You may feel it is a really unfavorable behavior when you have a repository which has abundant submodules<br>
+*I quickly checked help and couldn't find it. So the way may exist*
+]
+
 ---
 # Advantage of Gita status
-.absolute[.center.w100[![gita status](img/gita_status.png)]]
+.center[![gita status](img/gita_status.png)]]
+
 ---
 # Advantage of Gita status
-.absolute.transparent[.center.w100[![gita status](img/gita_status.png)]]
-- It use *Short format*, friendly for professionals<br>
-  .subtle[It provides a cheat sheet for beginners. Hit `?s`]
+.left-column[.center[![gita status](img/gita_status.png)]]
+.right-column[
+- It use the Short format, friendly for professionals<br>
+  *In case, gita provides a cheat sheet for beginners. Hit `?s` to display it*
+]
 
 --
-
+.right-column[
 - The file order won't change even after you staged / unstaged files<br>
-.subtle[Recently implemented. You can toggle as you much :-)]
+  *Toggle, toggle, toggle*
+]
 
 --
 
-- Several options of `git status` are available in `Gita status` command. You can improve the response with `--ignore-submodules` for a repository which has abundant submodules<br>
-  .subtle[The options can be specified via global variables or command arguments]
+.right-column[
+- Several options of `git status` are available. E.g. you can improve the response with `--ignore-submodules` for a repository which has abundant submodules<br>
+  *The options can be specified via global variables or command arguments*
+]
+
 ---
 layout: true
 class: center, middle
 ---
-<video controls style="width: 100%">
-  <source src="img/gita_status.webm">
-</video>
+<video controls src="img/gita_status.webm"></video>
 ---
-# Very .highlight[benri (useful)]
+# Very **benri**
 
+.footnote[benri &#8776; useful]

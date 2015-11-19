@@ -4,31 +4,34 @@ class: center, middle
 layout: true
 ---
 # &Lambda;lisue
-## A li su e
-.left-column[.center.avatar[![Avatar](img/with.png)]
-  .center[.fa.fa-twitter[] lambdalisue .fa.fa-github[] lambdalisue]
-  .center[Ph.D student of biology]
+.left-column[
+.center.avatar[![Avatar](img/with.png)]
+.center[.fa.fa-twitter[] lambdalisue .fa.fa-github[] lambdalisue]
+.center[Ph.D. student in **Molecular Biology**]
 ]
 --
-
-- vim-unified-diff<br>
-
---
-  .subtle[Make Diff feature of Vim better]
-
---
-
-- vim-pyenv<br>
+.right-column[
+- [vim-improve-diff](https://github.com/lambdalisue/vim-improve-diff)<br>
+  *Improve diff behaviour, e.g. `diffoff` will be called when the buffer is closed*
+]
 
 --
-  .subtle[Manage Pyenv in Vim better]
+.right-column[
+- [vim-unified-diff](https://github.com/lambdalisue/vim-unified-diff)<br>
+  *Enable the unified diff format as a diff format in Vim. Designed for `git diff --no-index`*
+]
 
 --
-
-- vim-gista<br>
+.right-column[
+- [vim-pyenv](https://github.com/lambdalisue/vim-pyenv)<br>
+  *Handle `pyenv` and `pyenv virtualenv` better in Vim. Cooperate with `jedi-vim`*
+]
 
 --
-  .subtle[Manage Gist in Vim better]
+.right-column[
+- [vim-gista](https://github.com/lambdalisue/vim-gista)<br>
+  *Manage GitHub's gist in Vim. Cooperate with `unite.vim`*
+]
 
 ---
 layout: true
@@ -36,8 +39,7 @@ class: center, middle
 ---
 In short, I'm a person who make a Vim plugin such as
 ### `\v%(Make|Manage) .* %(of|in) Vim better`
-Regular expression in Vim is so useful isn't it? :-p
 ---
 I have made several plugins but
-## About .highlight[plugins related to git manipulation]
+## About **plugins related to git manipulation**
 would be the today's my topic

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>ぼくのかんがえたさいきょうのぷらぐいん</title>
+<title>Most useful vim plugin ever (Just I think)</title>
 <link rel="stylesheet" href="css/slide.css">
 <textarea id="source"></textarea>
 <script src="js/remark.min.js"></script>
@@ -10,23 +10,26 @@ var slideshow;
 $(function() {
   $.when(
     $.get('slides/00-title.md'),
-    $.get('slides/00-profile.md'),
-    $.get('slides/01-vim_fugitive.md'),
-    $.get('slides/01-gita_diff-ls.md'),
-    $.get('slides/01-gita_status.md'),
-    $.get('slides/01-gita_commit.md'),
-    //$.get('slides/01-gita_diff.md'),
-    //$.get('slides/01-gita_file.md'),
-    $.get('slides/01-gita_browse.md'),
-    $.get('slides/01-gita_blame.md'),
-    $.get('slides/99-fin.md')
+    $.get('slides/00-profile.en.md'),
+    $.get('slides/01-vim_fugitive.en.md'),
+    $.get('slides/01-gita_diff-ls.en.md'),
+    $.get('slides/01-gita_status.en.md'),
+    $.get('slides/01-gita_commit.en.md'),
+    $.get('slides/01-gita_browse.en.md'),
+    $.get('slides/01-gita_blame.en.md'),
+    $.get('slides/99-fin.en.md')
   ).done(function() {
     var args = Array.prototype.slice.call(arguments);
     var contents = args.reduce(function(previousValue, currentValue) {
       return previousValue + currentValue[0] + "\n---\n";
     }, '');
     $('#source').html(contents);
-    slideshow = remark.create();
+    slideshow = remark.create({
+      ratio: '16:9'
+    });
+    $('video').on('click', function() {
+        this.play();
+    });
   });
 });
 </script>

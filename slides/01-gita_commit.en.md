@@ -10,25 +10,24 @@ As like Gita status
 is quite easy as well
 ---
 class: center, middle
-# .highlight[Gita commit]
+# **Gita commit**
 ---
 # Gita commit ?
 
-- call `Gita commit` or hit `cc`, `cA`, or `cC` in staging buffer<br>
-  .subtle[`cc`, `cA`, `cC` stand for `Gita commit`, `Gita commit --amend`, `Gita commit --no-amend` respectively]
+- It open a commit buffer which stands for writing a commit message<br>
+  *An alternative of `Gcommit` of fugitive*
 
-- Moved from `Gita status` without pain<br>
-  .subtle[`cc` keep options until commit, mean that after opening the commit buffer with 'ammend' option, it always open the commit buffer with 'ammend' option]
+- Call `Gita commit` or hit `cc`, `cA`, or `cC` in staging buffer<br>
+  *`cc`, `cA`, `cC` stand for `Gita commit`, `Gita commit --amend`, `Gita commit --no-amend` respectively*
 
 - You can temporary save the message with `:w` and commit the changes with `:q` or `CC`<br>
-  .subtle[The keys are similar to `Gcommit` of fugitive]
+  *The keys are similar to `Gcommit` of fugitive*
+
 ---
 layout: true
 class: center, middle
 ---
-<video controls style="width: 100%">
-  <source src="img/gita_commit.webm">
-</video>
+<video controls src="img/gita_commit.webm"></video>
 ---
-# Very .highlight[benri]
+# Very **benri**
 

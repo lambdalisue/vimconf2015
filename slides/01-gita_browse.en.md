@@ -20,28 +20,29 @@ class: center, middle, invert
 
 --
 
-.center.middle.highlight.large[/foo/bar/hoge/....../piyo/puyo/poyo/......]
+.center.middle.large[**/foo/bar/hoge/....../piyo/puyo/poyo/......**]
 
 --
 
-.center.middle.highlight.huge[So long！No way!]
+.center.middle.huge[**So long! No way!**]
 
 ---
 class: center, middle
 # If you feel so
 ---
 class: center, middle
-# .highlight[Gita browse]
+# **Gita browse**
 ---
 # Gita browse ?
 
 1. Create a URL followed by the rule<br>
-  .subtle[In default, rules of GitHub and Bitbucket.org are prepared. You can add your extra rules as well]
+  *In default, rules of GitHub and Bitbucket.org are prepared. You can add your extra rules as well*
 
 2. You can 1) Open a browser, 2) Copy the URL, 3) Echo the URL with the URL created by the rule
 
 3. Each rule can have schemes to create a special URL<br>
-  .subtle[For example, there are "exact" and "blame" schemes for GitHub. The "exact" scheme use a hashref instead of a branch name. The "blame" scheme use a GitHub's blame URL instead of a blob URL]
+  *For example, there are "exact" and "blame" schemes for GitHub. The "exact" scheme use a hashref instead of a branch name. The "blame" scheme use a GitHub's blame URL instead of a blob URL*
+
 ---
 # Write extra rules
 
@@ -61,6 +62,7 @@ let g:gita#features#browse#extra_translation_patterns = {
       \ ],
       \}
 ```
+
     %c1	A commit1
     %c2	A commit2. It might be an empty string.
     %r1	A revision (SHA256) of commit1.
@@ -68,14 +70,15 @@ let g:gita#features#browse#extra_translation_patterns = {
     %pt	A relative file path from a top of git working tree
     %ls	A start line number of selection
     %le	A end line number of selection
+
 ---
 layout: true
 class: center, middle
 ---
-<video controls style="width: 100%">
-  <source src="img/gita_browse.webm">
-</video>
+
+<video controls src="img/gita_browse.webm"></video>
 ---
-# Super .highlight[B]!
+
+# Very **benri**
 
 

@@ -3,16 +3,45 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
-body { font-size: 20px; }
+body {
+  font-size: 20px;
+}
 pre {
   text-align: left;
+}
+code {
+  color: #bb4;
+  display: inline-block;
+  margin: 0 0.4em;
+}
+a {
+  color: #9f9fd7;
+  text-decoration: none;
+}
+strong {
+  color: #D04255;
+  font-style: normal;
+  text-decoration: none;
+}
+em {
+  color: #aaa;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 0.8em;
 }
 li {
   margin-bottom: 2em;
 }
 li li {
   margin-bottom: 0.5em;
+}
+video {
+  width: 100%;
+}
+
+.left-column li,
+.right-column li {
+  margin-bottom: 1em;
 }
 
 .highlight {
@@ -31,8 +60,10 @@ li li {
   font-size: 1.2em;
   font-family: 'Noto Sans JP';
   color: #eee;
+  background-image: url(../img/vim-gita-40.svg);
   background-color: #333;
-  background-size: 100% auto;
+  background-size: auto 80%;
+  background-position: 80% 80%;
   text-shadow: 0 0 20px #000;
 }
 .remark-slide-content.invert {
@@ -40,8 +71,8 @@ li li {
   background-color: #335;
   text-shadow: 0 0 20px #444;
 }
-.remark-slide-content > p {
-  position: relative;
+.remark-slide-content code {
+  text-shadow: none;
 }
 .huge {
   font-size: 3.0em;
@@ -58,12 +89,7 @@ li li {
 .remark-slide-content h1 { font-size: 2.0em; }
 .remark-slide-content h2 { font-size: 1.6em; }
 .remark-slide-content h3 { font-size: 1.2em; }
-.remark-slide-content a,
-.remark-slide-content a > code {
-  color: #4B75B9;
-  text-decoration: none;
-}
-.remark-slide-content h1 + h2 {
+.remark-slide-content h1 + .ruby {
   margin-top: -2.0em;
   font-size: 0.8em;
   letter-spacing: 0.5em;
@@ -93,35 +119,24 @@ blockquote p {
   display: inline;
 }
 
-.avatar img {
-  width: 95%;
-}
-.w100 img {
-  width: 100%;
+.absolute {
+  position: absolute;
 }
 
 .left-column {
+  position: absolute;
   width: 45%;
-  height: 100%;
-  float: left;
-  margin-right: 5%;
+  padding-right: 5%;
 }
 .right-column {
-  width: 45%;
-  height: 100%;
-  float: right;
-  padding-left: 5%;
+  padding-left: 50%;
 }
-.clearfix {
-  display: block;
-  clear: both;
+.left-column img,
+.right-column img {
+  width: 90%;
 }
-.absolute {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+
+.avatar img {
+  width: 70%;
 }
-.transparent {
-  opacity: 0.1;
-}
+

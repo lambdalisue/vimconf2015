@@ -25,7 +25,7 @@ layout: true
 
 --
 
-.large.center[Try it with .highlight[your own responsibility] :-)]
+.large.center[Try it with **your own responsibility** :-)]
 
 ---
 # Information
