@@ -8,11 +8,7 @@ class: center, middle, invert
 
 --
 
-"Alright, I should commit **this finished part**."
-
---
-
-"Which files should I stage? Let me see..."
+"Ok. Done. Which files should I stage? Let me see..."
 
 --
 
@@ -30,9 +26,9 @@ Changes not staged for commit:
 
         modified:   foo/bar/hoge/……/piyo/puyo/ponyo.pl
         modified:   foo/bar/hoge/……/piyo/puyo/oyo.pl
-        .
-        .
-        .
+        modified:   foo/bar/hoge/……/piyo/puyo/myo.pl
+        modified:   foo/bar/hoge/……/piyo/puyo/eyo.pl
+        ...
 ```
 --
 

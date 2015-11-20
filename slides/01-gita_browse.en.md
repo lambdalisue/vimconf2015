@@ -44,8 +44,6 @@ class: center, middle
   *For example, there are "exact" and "blame" schemes for GitHub. The "exact" scheme use a hashref instead of a branch name. The "blame" scheme use a GitHub's blame URL instead of a blob URL*
 
 ---
-# Write extra rules
-
 ```vim
 let g:gita#features#browse#extra_translation_patterns = {
       \ 'gitlab.kawaz.org': [
