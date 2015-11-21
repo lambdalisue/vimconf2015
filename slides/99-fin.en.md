@@ -9,11 +9,7 @@ layout: true
 
 --
 
-  - Edit a commit message via `cc`
-
---
-
-  - Commit via `:q`
+  - Edit a commit message via `cc` and commit via `:q`
 
 --
 
@@ -25,7 +21,7 @@ layout: true
 
 --
 
-.large.center[Try it with **your own responsibility** :-)]
+.large.center[I recommend you to use **vim-fugitive** <br>**while vim-fugitive is more future rich and stable**]
 
 ---
 # Information
