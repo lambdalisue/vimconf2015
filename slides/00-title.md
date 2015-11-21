@@ -5,5 +5,7 @@ class: center, middle
 
 [jp](index.jp.html) | [en](index.html)
 
+https://lambdalisue.github.io/vimconf2015
+
 @vimconf2015
 
