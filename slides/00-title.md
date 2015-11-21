@@ -1,6 +1,9 @@
 layout: true
 class: center, middle
 ---
-# .huge[Change<br>the<br>world]
+# .title[Change<br>the<br>world]
+
+[jp](index.jp.html) | [en](index.html)
 
 @vimconf2015
+
